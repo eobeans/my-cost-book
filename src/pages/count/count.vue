@@ -3,6 +3,8 @@
         <image class="logo" src="../../static/logo.png"></image>
 		<view>
             <text class="title">{{title}}</text>
+			<u-button text="月落"></u-button>
+			<u-button text="count"></u-button>
         </view>
 	</view>
 </template>
