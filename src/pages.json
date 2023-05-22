@@ -1,11 +1,31 @@
 {
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/cost/cost",
+      "aliasPath":"/",
+      "name":"cost",
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
-		}
+		},
+    {
+    	"path": "pages/count/count",
+      "aliasPath": "/count",
+      "name":"count"
+    },
+    {
+    	"path": "pages/user/user",
+      "aliasPath": "/user",
+      "name":"user"
+    },
+    {
+    	"path": "pages/error/404",
+      "aliasPath": "/404",
+      "name":"404"
+    }
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
