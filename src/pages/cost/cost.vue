@@ -24,7 +24,16 @@
       </view>
     </view>
     <view class="detail-contain">
-      <view class="detail-cost">test</view>
+      <view class="detail-cost">
+        <div class="cost-icon">
+          <u-icon name="order" color="#2979ff" size="30"></u-icon>
+        </div>
+        <div class="cost-asset">
+          <div class="asset-type">餐饮</div>
+          <div class="asset-time">16:55:58</div>
+        </div>
+        <div class="cost-money">-5.00</div>
+      </view>
       <view class="detail-cost">test</view>
       <view class="detail-cost">test</view>
     </view>
@@ -50,6 +59,10 @@
 </script>
 
 <style lang="scss">
+$font-size-sm: 12px;
+$font-size-md: 15px;
+$font-size-bg: 18px;
+
   .cost-header {
     display: block;
     height: 36px;
@@ -114,6 +127,33 @@
       height: 36px;
       margin: 3px 0 3px 0;
       background-color: cornflowerblue;
+    }
+    .cost-icon {
+      display: block;
+      float: left;
+      margin: 3px 4px 3px 4px;
+      background-color: bisque;
+    }
+    .cost-asset {
+      display: block;
+      float: left;
+      .asset-type {
+        display: block;
+        font-size: $font-size-md;
+        background-color: aliceblue;
+      }
+      .asset-time {
+        display: block;
+        font-size: $font-size-sm;
+        background-color: crimson;
+      }
+    }
+    .cost-money {
+      display: block;
+      float: right;
+      margin: 6px 4px 6px 0;
+      font-size: $font-size-bg;
+      background-color: lawngreen;
     }
   }
   .divider {
